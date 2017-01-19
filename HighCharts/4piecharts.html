@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang = "en">
+   <head>
+      <meta charset = "utf-8">
+      <title>jQuery UI Dialog functionality</title>
+      <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+         rel = "stylesheet">
+      <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+        <script src="Highcharts/code/highcharts.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script type="text/javascript" src="Highcharts/code/js/themes/sand-signika.js"></script>
+        <style>
+         .ui-widget-header,.ui-state-default, ui-button {
+            background:darkblue;
+            border: 1px solid darkblue;
+            color: #FFFFFF;
+            font-weight: bold;
+         }
+            .ui-widget-body{
+                background:darkblue;
+            border: 1px solid darkblue;
+            color: #FFFFFF;
+            font-weight: bold;
+            }
+      </style>
+
+      <script>
+         $(function() {
+            $( "#dialog-1" ).dialog({
+               autoOpen: false,
+                modal:true,
+                minWidth:750
+            });
+            $( "#opener1" ).click(function() {
+               $( "#dialog-1" ).dialog( "open" );
+
+               Highcharts.chart('container1',{
+    chart:{
+        type:'pie'//type of chart
+    },
+       title:{//title of chart
+        text:"sample Pie Chart"
+       },
+       tooltip: {// the popup or label format during hover
+            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        },
+       plotOptions:{//the pie chart field select and shrink options
+        pie:{
+            allowPointSelect:true,
+            cursor:'pointer',
+            showInLegend:true
+        }
+       }, legend:{
+                       layout:'vertical',
+                       align:'right',
+                       verticalAlign:'top',
+                       floating :true,
+                       borderWidth:1,
+                       shadow:true
+                   },
+       series:[{// the PIchart data values to be included
+        name:'sample',
+           colorByPoint:true,
+           data:[
+            {
+            name:"Name1",
+               y:3
+           },
+            {
+                   name:"Name2",
+                   y:19,
+                sliced:true,
+               selected:true
+             },
+            {
+            name:"Name3",
+               y:1
+           },{
+            name:"Name5",
+               y:40
+           },
+            {
+            name:"Name4",
+               y:10
+           }]
+       }]
+   });
+               Highcharts.chart('container2',{
+    chart:{
+        type:'pie'//type of chart
+    },
+       title:{//title of chart
+        text:"sample Pie Chart"
+       },
+       tooltip: {// the popup or label format during hover
+            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        },
+       plotOptions:{//the pie chart field select and shrink options
+        pie:{
+            allowPointSelect:true,
+            cursor:'pointer',
+            dataLabels: {
+                        enabled: false
+                    },
+            showInLegend:true
+        }
+       },
+       series:[{// the PIchart data values to be included
+        name:'sample',
+           colorByPoint:true,
+           data:[
+            {
+            name:"Name1",
+               y:3
+           },
+            {
+                   name:"Name2",
+                   y:19,
+                sliced:true,
+               selected:true
+             },
+            {
+            name:"Name3",
+               y:1
+           },{
+            name:"Name5",
+               y:40
+           },
+            {
+            name:"Name4",
+               y:10
+           }]
+       }]
+   });
+               Highcharts.chart('container3',{
+    chart:{
+        type:'pie'//type of chart
+    },
+       title:{//title of chart
+        text:"sample Pie Chart"
+       },
+       tooltip: {// the popup or label format during hover
+            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        },
+       plotOptions:{//the pie chart field select and shrink options
+        pie:{
+            allowPointSelect:true,
+            cursor:'pointer'
+        }
+       },
+       series:[{// the PIchart data values to be included
+        name:'sample',
+           colorByPoint:true,
+           data:[
+            {
+            name:"Name1",
+               y:3
+           },
+            {
+                   name:"Name2",
+                   y:19,
+                sliced:true,
+               selected:true
+             },
+            {
+            name:"Name3",
+               y:1
+           },{
+            name:"Name5",
+               y:40
+           },
+            {
+            name:"Name4",
+               y:10
+           }]
+       }]
+   });
+               Highcharts.chart('container4',{
+    chart:{
+        type:'pie'//type of chart
+    },
+       title:{//title of chart
+        text:"sample Pie Chart"
+       },
+       tooltip: {// the popup or label format during hover
+            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        },
+       plotOptions:{//the pie chart field select and shrink options
+        pie:{
+            allowPointSelect:true,
+            cursor:'pointer',
+            dataLabels:{
+                enabled:false
+            }
+        }
+       },
+       series:[{// the PIchart data values to be included
+        name:'sample',
+           colorByPoint:true,
+           data:[
+            {
+            name:"Name1",
+               y:3
+           },
+            {
+                   name:"Name2",
+                   y:19,
+                sliced:true,
+               selected:true
+             },
+            {
+            name:"Name3",
+               y:1
+           },{
+            name:"Name5",
+               y:40
+           },
+            {
+            name:"Name4",
+               y:10
+           }]
+       }]
+   });
+            });
+             $("#dialog-2").dialog({
+                   autoOpen:false,
+                   modal:true,
+                   minWidth:975
+               });
+            $("#opener2").click(function () {
+               $("#dialog-2").dialog("open");
+
+               Highcharts.chart('container5',{
+                   chart:{
+                       type:'bar'
+                   },
+                   title:{
+                       text:"Relevancy Score"
+                   },
+                   xAxis:{
+                        categories:['sampleCat1','sampleCat2','sampleCat3','sampleCat4','sampleCat5'],
+                   },
+                   yAxis: {
+                        title: {
+                            text: 'Relevancy Score'
+                        }
+                   },
+                   legend:{
+                       layout:'vertical',
+                       align:'right',
+                       verticalAlign:'top',
+                       floating :true,
+                       borderWidth:1,
+                       shadow:true
+                   },
+                    plotOptions: {
+                    bar: {
+                        dataLabels: {
+                            enabled: true,
+                            inside:true
+                        }
+                    }
+                   },
+                   series:[{
+                    name:'relevance',
+                       data:[0.22,0.55,.012,0.44,0.90,0.50]
+                   }]
+               });
+               Highcharts.chart('container6',{
+                   chart:{
+                       type:'bar'
+                   },
+                   title:{
+                       text:"Relevant Items"
+                   },
+                   xAxis:{
+                        categories:['Sample1','Sample2','Sample3','Sample4']
+                   },
+                   yAxis:{
+                       title:{
+                           text:null
+                       }
+                   },
+                   legend:{
+                       reversed:true,
+                       shadow:true,
+                       border:1
+                   },
+                   plotOptions:{
+                       bar:{
+                            dataLabels: {
+                                enabled:true,
+                                inside:true
+                            }
+                       },
+                       series:{
+                           stacking:'normal'
+                       }
+                   },
+                   series:[{
+                    name:'Stacked Relevancy1',
+                       data:[20,30,40,50]
+                   },
+                       {
+                           name:'stacked Relevancy 2',
+                           data:[30,50,60,10]
+                       },
+                   {
+                           name:'stacked Relevancy 2',
+                           data:[30,50,60,10]
+                       }]
+               });
+            });
+//$("#container4").innerHTML="<div><center><b>By Influence Factor</b><br><br><br><br><br> <b>* Best Bet Or SponsoredLink</b></center></div>";
+         });
+      </script>
+   </head>
+
+   <body>
+      <!-- HTML -->
+      <div id = "dialog-1"
+         title = "Relavancy Analysis" style="background-color: #2e6da4">
+          <table>
+              <tr>
+                  <td><div id="container1" style="min-width: 350px; height: 300px; max-width: 600px; margin: 0 auto"></div></td>
+                  <td><div id="container2" style="min-width: 350px; height: 300px; max-width: 600px; margin: 0 auto"></div></td>
+              </tr>
+              <tr>
+                  <td><div id="container3" style="min-width: 350px; height: 300px; max-width: 600px; margin: 0 auto"></div></td>
+                  <td><div id="container4" style="min-width: 350px; height: 300px; max-width: 600px; margin: 0 auto"></div></td>
+              </tr>
+          </table>
+      </div>
+      <div id = "dialog-2"
+         title = "Relavancy Analysis" style="background-color: #2e6da4">
+          <table>
+              <tr>
+                  <td><div id="container5" style="min-width: 455px; height: 350px; max-width: 600px; margin: 0 auto"></div></td>
+                  <td><div id="container6" style="min-width: 455px; height: 350px; max-width: 600px; margin: 0 auto"></div></td>
+              </tr>
+            </table>
+      </div>
+      <button id = "opener1">Open PiCharts</button>
+   <button id = "opener2">Open BarCharts</button>
+   </body>
+</html>

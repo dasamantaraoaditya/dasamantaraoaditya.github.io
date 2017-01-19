@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bar-Charts</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="../Highcharts/code/highcharts.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script type="text/javascript" src="Highcharts/code/js/themes/gray.js"></script>
+    <script>
+        $(function () {
+            var mychart=Highcharts.chart('container',{
+                chart:{
+                    type:'bar'//type of chart
+                },
+                title:{//chats main title
+                  text:"sample Bar chart"//title of chart
+                },
+                xAxis:{//constraints on x-axis
+                    title:{
+                        text:"Sample Barchart X-axis" //title on x axis
+                    },
+                    categories:['sample1','sample2','sample3'] //catogeries on X-axis
+                },
+                yAxis:{//constraints on y-axis
+                  title:{
+                      text:"Sample Barchart Y-axis"
+                  }
+                },
+                series:[//series of information ie values on Axis where categories are present
+                    {
+                     name: 'sample1',
+                        data:[-10,2,4]
+                    },
+                    {
+                     name:'sample2',
+                        data:[2,-3,4]
+                    },
+                    {
+                        name:'sample3',
+                        data:[5,6,-7]
+                    }
+                ]
+            });
+        })
+    </script>
+</head>
+
+<div id="container" style="width:100%; height:400px;"></div>
+
+</body>
+</html>

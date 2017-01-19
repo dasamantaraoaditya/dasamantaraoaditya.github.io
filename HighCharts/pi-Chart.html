@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PiChart</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="Highcharts/code/highcharts.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script type="text/javascript" src="Highcharts/code/js/themes/gray.js"></script>
+<script>
+$(function(){
+   Highcharts.chart('container',{
+    chart:{
+        type:'pie'//type of chart
+    },
+       title:{//title of chart
+        text:"sample Pie Chart"
+       },
+       tooltip: {// the popup or label format during hover
+            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        },
+       plotOptions:{//the pie chart field select and shrink options
+        pie:{
+            allowPointSelect:true,
+            cursor:'pointer'
+        }
+       },
+       series:[{// the PIchart data values to be included
+        name:'sample',
+           colorByPoint:true,
+           data:[
+            {
+            name:"Name1",
+               y:3
+           },
+            {
+                   name:"Name2",
+                   y:19,
+                sliced:true,
+               selected:true
+             },
+            {
+            name:"Name3",
+               y:1
+           },{
+            name:"Name5",
+               y:40
+           },
+            {
+            name:"Name4",
+               y:10
+           }]
+       }]
+   });
+});
+</script>
+</head>
+<body>
+
+<div id="container" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
+</body>
+</html>
