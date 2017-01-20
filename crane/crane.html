@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crain</title>
+    <link rel="stylesheet" href="css/craneCss.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/jsCrane.js"></script>
+</head>
+<body>
+    <section class="background"> <!-- background and full container-->
+        <section class="crane"><!--The whole Crane will be inside this section-->
+            <div class="jointWheels"></div><!--joint for wheels and upper parts-->
+            <div class="chain"> <!--Bottom chain of the crane -->
+                <div class="wheels" style="left: 30px"></div><!--wheels of the crane Chain-->
+                <div class="wheels" style="left: 110px"></div>
+                <div class="wheels" style="left: 190px"></div>
+                <div class="wheels" style="left: 270px"></div>
+                <div class="wheels" style="left: 350px"></div>
+                <div class="wheels" style="left: 430px"></div>
+            </div>
+            <div class="craneUpperLeft">
+                <img src="img/smoke.gif" class="smoke">
+            </div><!--Holds all the Left Parts of the upper half of crane-->
+            <div class="craneUpperRight"><!--Holds all the Upper Right parts of the crane-->
+                <div class="glass"></div><!-- glass or window of the crane-->
+            </div>
+            <div class="outterPillar"></div> <!-- the outer cover of the pillar -->
+            <section class="pillars">
+                <div class="innerPillar"><!-- the inner pillar to extend or to bend-->
+                    <div class="sectionJoint"></div> <!-- the wheel connecting the hook and inner pillar-->
+                </div>
+                <section class="carriage">
+                    <div class="strings"></div><!-- the Strings that connect the hook and Joint Wheel-->
+                    <div class="hookStand"></div><!-- the Hookstand that connects the strings and Hook-->
+                    <div class="hook"></div><!-- the Hook-->
+                    <div class="hookConnect"></div><!-- hook extension-->
+                </section>
+            </section>
+        </section>
+         <div class="ground">  <!--ground and sand-->
+             <section class="buttons">
+                <button onclick="moveForward()">Forward</button>
+                <button onclick="moveBackward()">Backward</button>
+                <button onclick="moveUp()">Up</button>
+                <button onclick="moveDown()">Down</button>
+                <button onclick="pillarUp()">PillarUp</button>
+                <button onclick="pillarDown()">PillarDown</button>
+                <button id="onOff" onclick="onOff()">On</button>
+                 <lable>For Much Simpler Navigation <b>NUM-LOCK 4.Back 6.Forward 8.Lift 2.Drop 9.CraneOver 1.CraneUnder 5.On/off</b></lable>
+            </section>
+
+         </div>
+    </section>
+</body>
+</html>
