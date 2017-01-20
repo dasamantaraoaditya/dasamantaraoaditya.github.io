@@ -1,0 +1,183 @@
+button{
+    border: double 10px #3a3a3a;
+    background-color: wheat;
+}
+.background{
+    border: solid black 10px;
+    height: 860px;;
+    width: 1875px;
+    background-color: #2b542c;
+    position:absolute;
+    }
+.ground{
+    border: solid sandybrown 20px;
+    height: 30px;
+    width: 1835px;
+    background-color: sandybrown;
+    top:810px;
+    position: absolute;
+    border-top-width: 10px ;
+    border-top-color: #3c3c3c;
+}
+.chain{
+    width: 500px;
+    height: 55px;
+    top:745px;
+    left:200px;
+    border: solid black 5px;
+    border-radius: 30px;
+    position: absolute;
+    background-color: darkgoldenrod;
+}
+.wheels{
+    width: 40px;;
+    height: 40px;
+    top:2.5px;
+    border: double black 5px;
+    border-radius: 25px;
+    position: absolute;
+    background-color: #66512c;
+}
+.smoke {
+    left:-200px;
+    top:100px;
+    width:200px;
+    height:100px;
+    transform: rotate(180deg);
+    position: relative;
+    visibility: hidden;
+}
+.jointWheels{
+    width: 250px;;
+    height: 5px;
+    top:735px;
+    left:350px;
+    border: solid black 5px;
+    border-radius: 30px;
+    position: absolute;
+    background-color: darkslategray;
+}
+.craneUpperLeft{
+    width: 370px;
+    height: 200px;
+    top:530px;
+    left:150px;
+    border: solid black 5px;
+    border-right: transparent;
+    border-radius: 50px 20px 0 0;
+    position: absolute;
+    background-color: darkkhaki;
+}
+.craneUpperRight{
+    width: 250px;
+    height: 300px;
+    top:430px;
+    left:500px;
+    border: solid black 5px;
+    border-radius: 50px 20px 0 0;
+    position: absolute;
+    background-color: darkkhaki;
+    -webkit-transform: skew(-10deg);
+    -moz-transform: skew(-20deg);
+}
+.glass{
+    width: 150px;
+    height: 200px;
+    top:30px;
+    left:100px;
+    border: solid black 10px;
+    border-radius: 50px 20px 0 0;
+    position: absolute;
+    background-color: #9acfea;
+    -webkit-transform: skew(-2deg);
+    -moz-transform: skew(-20deg);
+}
+.outterPillar{
+    width: 100px;
+    height: 150px;
+    top:375px;
+    left:410px;
+    border: solid black 5px;
+    position: absolute;
+    background: -webkit-linear-gradient(0deg, darkgoldenrod, saddlebrown);
+    -webkit-transform: skew(-65deg);
+    -moz-transform: skew(-65deg);
+}
+.innerPillar{ /*130 +height 330 245 -top 45 and 735 +left 935*/
+    width: 50px;
+    height: 130px;
+    top:245px;
+    left:735px;
+    border: solid black 5px;
+    border-bottom: transparent;
+    position: relative;
+    background: -webkit-linear-gradient(0deg, darkgray, #b88d2b);
+    -webkit-transform: skew(-65deg);
+    -moz-transform: skew(-65deg);
+}
+.sectionJoint{
+    width: 20px;
+    height: 20px;
+    top:-30px;
+    left:10px;
+    border: double #5e5e5e 20px;
+    border-radius: 50px;
+    position: relative;
+    background: -webkit-linear-gradient(30deg, black, saddlebrown);
+    -webkit-transform: skew(65deg);
+    -moz-transform: skew(65deg);
+}
+.strings{/*50 height 400 (stand is automatically adjusting with Hook*/
+    width:23px;
+    height:50px;
+    left:890px;
+    top: 135px;
+    border: double 10px #5e5e5e;
+    border-bottom: transparent;
+    border-top: transparent ;
+    position: relative;
+}
+.hookStand{
+    width:25px;
+    height:25px;
+    left:890px;
+    top: 120px;
+    border: groove 10px burlywood;
+    background: -webkit-linear-gradient(30deg, #8a6d3b, burlywood);;
+    position: relative;
+}
+.hook{
+    width: 10px;
+    height: 10px;
+    top:130px;
+    left: 900px;
+    border: solid #5e5e5e 8px;
+    border-radius: 50px;
+    position: relative;
+    border-top: transparent;
+    border-top-left-radius: 0;
+}
+.hookConnect{
+    width: 10px;
+    height: 10px;
+    top:103px;
+    left:900px;
+    border: solid #5e5e5e 8px;
+    position: relative;
+    border-top: transparent;
+    border-bottom: transparent;
+    border-right: transparent;
+    border-top-left-radius: 0;
+}
+.carriage{/* 0 top 300*/
+position: relative;
+    top:00px;
+    left:00px;
+}
+.pillars{
+position: relative;
+}
+.crane{/* 0 left 500 */
+    position: relative;
+    left:00px;
+}
