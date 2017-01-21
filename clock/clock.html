@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wall Clock</title>
+    <link rel="stylesheet" type="text/css" href="wallClockCss.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="jsWallClock.js"></script>
+</head>
+<body>
+<section class="background"><!--Container main-->
+    <img class="brick" src="Wall.jpg"><!-- Background for the brick effect-->
+    <section class="wallClock"><!-- clock Container -->
+        <div class="upperPyramid"></div> <!-- upper house effect pyramid-->
+        <div class="lowerBody">
+            <div class="clockBox">
+                <img src="numbers.png" style="width:200px;height:200px;">
+                <div class="secondsHand"></div><!-- Seconds hand of the clock -->
+                <div class="minutesHand"></div><!-- Minutes hand of the clock -->
+                <div class="hoursHand"></div><!-- Hours hand of the clock -->
+            </div> <!-- where the actual clock will resite-->
+        </div> <!-- lower body effect-->
+        <div class="clockHole"></div> <!-- lower body effect-->
+        <section class="pendulum">
+            <div class="pendulumStick"></div>
+            <div class="pendulumBall"></div>
+        </section>
+        <section class="dateHalf">
+            <div class="bottomHalf"></div><!--where date and day is visible-->
+        </section>
+    </section>
+</section>
+</body>
+</html>

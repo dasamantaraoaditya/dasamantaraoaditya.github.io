@@ -1,0 +1,117 @@
+.background{
+    position: absolute;
+    }
+.brick{
+    position: absolute;
+    border: solid black 5px;
+    height:920px;
+    width:1300px;
+    }
+.upperPyramid{
+    width: 0;
+    height:0;
+    top: 50px;
+    left:120px;
+    position: relative;
+    border-left: 150px solid transparent;
+	border-right: 150px solid transparent;
+	border-bottom: 230px solid #c2531d;
+}
+.lowerBody{
+    width:230px;
+    height:300px;
+    top: 50px;
+    left:150px;
+    position: relative;
+    background: -webkit-linear-gradient(left, red , yellow);
+    border:solid black 5px;
+    border-bottom: solid black 20px;
+}
+.clockHole{
+    width:75px;
+    height:75px;
+    top: -325px;
+    left:225px;
+    position: relative;
+    background: -webkit-linear-gradient(top, black , gray);
+    border:solid black 5px;
+    border-radius: 42px;
+}
+.clockBox{
+    position: relative;
+    left:15px;
+    top:50px;
+    width:180px;
+    height:180px;
+}
+.secondsHand{
+    position: relative;
+    top:-157px;
+    left:100px;
+    height:60px;
+    width:0;
+    border:solid 1px navajowhite;
+    transform: rotate(0deg);
+    transform-origin: bottom right;
+}
+.minutesHand{
+    position: relative;
+    top:-210px;
+    left:100px;
+    height:50px;
+    width:0;
+    border:solid 2px #773b1d;
+    transform: rotate(0deg);
+    transform-origin: bottom right;
+}
+.hoursHand{
+    position: relative;
+    top:-255px;
+    left:100px;
+    height:40px;
+    width:0;
+    border:solid 3px #122b40;
+    transform: rotate(0deg);
+    transform-origin: bottom right;
+}
+.pendulumStick{
+    position: relative;
+    height: 200px;
+    width: 5px;
+    border: solid #0f0f0f medium;
+    background: -webkit-linear-gradient(left, #31708f , #3c3c3c);
+    border-top:transparent;
+    border-bottom: transparent;
+}
+.pendulumBall{
+    position: relative;
+    height: 25px;
+    width: 25px;
+    top:-3px;
+    left: -9px;
+    border: solid black 3px;
+    background: -webkit-linear-gradient(left, #2aabd2 , #122b40);
+    border-radius:15px;
+}
+.pendulum{
+    position: relative;
+    top:-40px;
+    left:265px;
+    transform: rotate(-30deg);
+    transform-origin: top left;
+}
+.dateHalf{
+    position: relative;
+}
+.bottomHalf{
+    position: relative;
+    border:solid 10px black;
+    border-bottom: double 20px black;
+    height:300px;
+    width:220px;
+    top:-280px;
+    left:150px;
+}
+.wallClock{
+position: relative;
+}
