@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kitchen</title>
+    <link rel="stylesheet" type="text/css" href="KitchenCss.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="JSkitchen.js"></script>
+    <style>
+        .interior{
+            position: absolute;
+            left:65px;
+            top:38px;
+            width:1233px;
+            height:591px;
+            background: -webkit-linear-gradient(bottom,#255625,#5e5e5e);
+        }
+        .cupboard{
+            position: relative;
+            background:-webkit-linear-gradient(right,#8a6d3b,darkgoldenrod );
+            width:250px;
+            height:120px;
+            border: solid #0f0f0f 5px;
+            transition: transform 2s;
+            transform-style: preserve-3d;
+        }
+        .upperCloset{
+            background: -webkit-linear-gradient(top,#66512c,#2d2d30);
+            width:575px;
+            height:150px;
+            left:5px;
+            position: relative;
+            border: 5px solid black;
+        }
+        #cupboard1{
+            top:-120px;
+            left:15px;
+            transform-origin: left center;
+        }
+        #cupboard2{
+            top:-378px;
+            left:295px;
+            transform-origin: left center;
+        }
+        #cupboard3{
+            top:-430px;
+            left:420px;
+            transform-origin: bottom center;
+        }
+        .desk{
+            position: absolute;
+            top:325px;
+            left:-50px;
+        }
+        .desk #imgDesk{
+            position: absolute;
+            top:00px;
+            left:00px;
+            width:950px;
+            height: 300px;
+            box-shadow: black inset;
+        }
+        .desk #imgBook{
+            position: absolute;
+            top:35px;
+            left:475px;
+            width:70px;
+            height:70px;
+        }
+        .desk #imgBottle{
+            position: absolute;
+            top:-5px;
+            left:630px;
+            width:100px;
+            height:110px;
+        }
+        .desk #imgBowl{
+            position: absolute;
+            top:35px;
+            left:565px;
+            width:70px;
+            height:70px;
+        }
+        .stove{
+            position: relative;
+            width:50px;
+            height:10px;
+            background: -webkit-linear-gradient(left,#843534,orangered);
+            border: 2px solid brown;
+        }
+        .stove img{
+            position: relative;
+            top:-70px;
+            visibility: hidden;
+        }
+        .fridge{
+            width:220px;
+            height:370px;
+            position: relative;
+            left:1080px;
+            top:-260px;
+        }
+        .stove-button{
+            position: relative;
+            border: 3px solid black;
+            border-radius: 20px;
+            width:19px;
+            height:20px;
+            top:-400px;
+            left:-90px;
+            background: -webkit-linear-gradient(top,#761c19,#737373);
+        }
+        .window{
+            width:230px;
+            height:200px;
+            top:-550px;
+            left:550px;
+            position: relative;
+        }
+        .knob{
+            border: solid 5px #122b40;
+            background: -webkit-linear-gradient(left,#474e5d,#122b40);
+            width:20px;
+            height:20px;
+            border-radius: 15px;
+            position: relative;
+        }
+        #knob1{
+            left:210px;
+            top:50px;
+        }
+        #knob2{
+            left:210px;
+            top:50px;
+        }
+        #knob3{
+            top:10px;
+            left:110px;
+        }
+        .cupboard-inside{
+            background: -webkit-linear-gradient(left,slategrey,gray);
+            height:120px;
+            width:250px;
+            border: solid black 4px;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+<section class="kitchenBG"><!-- The basic background of the kitchen container -->
+  <div id="cube">
+    <figure class="right"></figure>
+    <figure class="left"></figure>
+    <figure class="top"></figure>
+    <figure class="bottom"></figure>
+  </div>
+</section>
+<section class="interior">
+    <code><b>1)Click on the Stove on and Off Button.<br>2.To Open or Close a cupboard click on knob.</b></code>
+    <section class="upperCloset">
+        <div class="cupboard-inside" style="left:20px;top:10px;"></div>
+        <div id="cupboard1" class="cupboard"><button class="knob" id="knob1"></button></div>
+        <div class="cupboard-inside" style="left:300px;top:-250px;"></div>
+        <div id="cupboard2" class="cupboard"><button class="knob" id="knob2"></button></div>
+    </section>
+    <section class="desk">
+        <img id="imgDesk" src="desk.png">
+        <div class="cupboard-inside" style="left:420px;top:130px;"></div>
+        <img id="imgBook" src="recipie.png">
+        <img id="imgBowl" src="bowl.png">
+        <img id="imgBottle" src="bottle.png">
+        <div class="stove" style="left:190px;top:-50px;"><img src="fire.gif"></div>
+        <div class="stove" style="left:330px;top:-60px;"><img src="fire.gif"></div>
+        <div class="stove" style="left:250px;top:-110px;"><img src="fire.gif"></div>
+        <div class="stove" style="left:380px;top:-120px;"><img src="fire.gif"></div>
+        <img class="fridge" src="fridg.png">
+        <button class="stove-button"></button>
+        <img class="window" src="window.png">
+        <div id="cupboard3" class="cupboard"><button class="knob" id="knob3"></button></div>
+    </section>
+</section>
+</body>
+</html>
