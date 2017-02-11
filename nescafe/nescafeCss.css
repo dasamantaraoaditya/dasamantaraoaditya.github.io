@@ -1,0 +1,120 @@
+.box-upper{
+    width:300px;
+    height:0;
+    position: relative;
+    box-sizing: content-box;
+    border: 50px solid rgba(0,0,0,0);
+    border-top: 0 solid;
+    border-bottom: 100px solid #8a6d3b;
+}
+.box-front{
+    background: -webkit-linear-gradient(left,#c1e2b3,#985f0d);
+    width:390px;
+    height:480px;
+    position: relative;
+    border: solid 5px black;
+}
+.backgroundNescafe{
+        position: relative;
+        top:20px;
+        left:500px;
+}
+.box-front-upper{
+    border: solid 5px black;
+    height:180px;
+    background: -webkit-linear-gradient(top,#474e5d,darkolivegreen);
+}
+.box-front-upper img{
+    width:150px;
+    height:150px;
+    left:10px;
+    position: relative;
+}
+h1{
+    font-family: Arial;
+    font-size: 50px;
+    left:160px;
+    top:-150px;
+    position: relative;
+}
+.box-front-diagonal{
+    position: relative;
+    border: solid 5px black;
+    transform: rotate(37deg);
+    top:140px;
+    left:-50px;
+    height:00px;
+    width:478px;
+}
+.box-front-lower-left{
+    position: relative;
+    top:10px;
+    left:250px;
+}
+.flavourName{
+    font-family: Batang;
+    font-weight: bold;
+    font-size: 15px;
+}
+.nescafe-button{
+    background: -webkit-linear-gradient(top,darkgrey,darkred);
+    width:20px;
+    height:20px;
+    border: 3px solid black;
+    border-radius:15px;
+}
+.left-triangle{
+    width: 0;
+    height: 0;
+    top:-110px;
+    position: relative;
+    border-style: solid;
+    border-width: 150px 0 0 195px;
+    border-color: transparent transparent transparent #122b40;
+}
+.tube{
+    width:20px;
+    height:30px;
+    position: relative;
+    left:100px;
+    top:-110px;
+    background: -webkit-linear-gradient(left,#2d2d30,#761c19);
+    border:black solid;
+    border-width:0px 2px 0px 2px;
+}
+.glass{
+    width:50px;
+    height:70px;
+    position: relative;
+    left:90px;
+    top:-80px;
+    background: -webkit-linear-gradient(right,beige,silver);
+    border:black solid 1px;
+    border-width:5px 2px 5px 2px;
+    border-radius: 00px 00px 5px 5px;
+}
+.handle{
+    width:10px;
+    height:20px;
+    position: relative;
+    left:73px;
+    top:-150px;
+    border:black double;
+    border-width:8px 0px 8px 8px;
+    border-radius: 15px 00px 00px 15px;
+}
+.flow-water{
+    position: relative;
+    width:10px;
+    height:00px;
+    top:-226px;
+    left:107px;
+    background: -webkit-linear-gradient(bottom,cornflowerblue,steelblue);
+}
+.water-inside{
+    position: relative;
+    width:50px;
+    height:0px;
+    top:70px;
+    background: -webkit-linear-gradient(left,#2aabd2,#2b669a);
+}
