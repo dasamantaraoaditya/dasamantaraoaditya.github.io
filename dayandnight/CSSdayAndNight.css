@@ -1,0 +1,65 @@
+.backgroundLight{
+    position: relative;
+    width: 1880px; /*1880*/
+    height:870px; /*870*/
+    border: solid black 5px;
+    background:-webkit-linear-gradient(top, rgb(232, 155, 26),rgb(225,225,225));
+}
+.sky{
+    position: relative;
+    left: 300px;
+ }
+.cloud{
+    position: relative;
+    width:10%;
+}
+.star{
+    position: relative;
+    width:2%;
+    visibility: hidden
+}
+.sun{
+    position: relative;
+    width:10%;
+    left:-60px;
+    top:150px;
+    visibility: visible;
+    opacity: 1;
+    transform: rotate(0deg);
+    transform-origin: center;
+}
+.moon{
+    position: relative;
+    width:5%;
+    left:70px;
+    top:100px;
+    visibility: visible;
+    opacity: 1;
+}
+.hill{
+    border: solid black 5px;
+    top:400px;
+    left:200px;
+    width:1500px;
+    height:200px;
+    position: relative;
+    border-radius: 200px 200px 00px 00px;
+    background: -webkit-linear-gradient(top,darkolivegreen,sandybrown);
+}
+.building{
+    position: relative;
+    border: solid black 3px;
+    border-bottom: transparent;
+}
+.window{
+    background: -webkit-linear-gradient(top,gray,silver);
+    border: black solid 3px;
+    width:20px;
+    height:20px;
+    position:relative;
+}
+.hill input,span{
+    position: relative;
+    top:-1150px;
+    left:500px;
+}
