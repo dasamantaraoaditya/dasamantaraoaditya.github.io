@@ -1,0 +1,38 @@
+.all-color{
+    background-color: deepskyblue;
+    align-items: center;
+}
+.box {
+    background-color: white;
+    color: deepskyblue;
+    height:auto;
+    position: relative;
+    top:100px;
+    width:500px;
+    padding: 25px;
+    border-radius: 5px;
+}
+.twitter{
+    background: deepskyblue;
+    color: white;
+    padding: 5px;
+    border-color: deepskyblue;
+    border-radius: 5px;
+}
+#quote{
+    text-align: center;
+}
+#quote-writer {
+    position: relative;
+    left:300px;
+    padding: 10px;
+}
+#next-quote{
+    background-color: deepskyblue;
+    color: white;
+    position: relative;
+    left:300px;
+    padding: 5px;
+    border-color: deepskyblue;
+    border-radius: 5px;
+}
