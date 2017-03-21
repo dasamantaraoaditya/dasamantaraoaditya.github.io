@@ -1,0 +1,90 @@
+/*
+Author :AdityaDasamantharao
+*/
+
+.background{
+    position: relative;
+    background:-webkit-linear-gradient(left,#1abc9c,#2C3E50);
+}
+.sky{
+    position: relative;
+}
+.cloud{
+    position: relative;
+}
+.building-top{
+    border-bottom: 100px solid brown;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	height: 0;
+	width: 54px;
+}
+.building-bottom{
+    width:150px;
+    height:150px;
+    background: -webkit-linear-gradient(left,brown,burlywood);
+    position: relative;
+    border: 2px solid black;
+    border-bottom: 0;
+}
+.ground{
+    background: -webkit-linear-gradient(top,greenyellow,forestgreen);
+    border-radius: 150px 150px 0 0;
+    width:1200px;
+    height:150px;
+    position: relative;
+}
+.window{
+    background: -webkit-linear-gradient(left,silver,white);
+    border: black 2px solid;
+    position: relative;
+}
+.wings{
+    position: relative;
+    width:300px;
+    height:300px;
+    z-index: 10;
+    border-radius: 100px;
+    transform: rotate(0deg);
+    transform-origin: center;
+    left:-125px;
+    top:-180px;
+}
+.windmill{
+    position: relative;
+    left:500px;
+    top:135px;
+}
+.building-left{
+    position: relative;
+}
+.building-body{
+    position: relative;
+    top:-100px;
+    left:154px;
+    border: 2px solid black;
+    border-left:0;
+    width:200px;
+    height: 100px;
+    background: -webkit-linear-gradient(left,brown,burlywood);
+}
+.building-roof{
+    position: relative;
+    background: -webkit-linear-gradient(left,#6d4e31,#122b40);
+    width:230px;
+    height:30px;
+    left:154px;
+    top:-100px;
+}
+.bushes{
+    position: relative;
+    left:250px;
+    top:-50px;
+    width:250px;
+    height:100px;
+}
+.buttons{
+    position: relative;
+    top:-600px;
+    left:1000px;
+}

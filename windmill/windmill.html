@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WindMill</title>
+    <link href="CSSwindmill.css" rel="stylesheet" >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="JSwindmill.js"></script>
+</head>
+<body>
+    <section class="background">
+        <div class="sky">
+            <img class="cloud" style="width:150px;top:100px;left:300px" src="cloud1.png">
+            <img class="cloud" style="width:170px;top:150px;left:600px" src="cloud1.png">
+        </div>
+        <div class="windmill">
+            <div class="building-top">
+                <div class="window" style="left:5px; top:50px;width: 40px;height:40px;border-radius:50px;"></div>
+                <img class="wings" src="wings.png">
+            </div>
+            <div class="building-bottom">
+                <div class="window" style="width:25px;height:25px;left:10px;top:20px"></div>
+                <div class="window" style="width:25px;height:25px;left:60px;top:-8px"></div>
+                <div class="window" style="width:25px;height:25px;left:110px;top:-37px"></div>
+                <div class="window" style="width:30px;height:40px;left:50px;top:20px"></div>
+            </div>
+            <div class="building-left">
+                <div class="building-roof"></div>
+                <div class="building-body">
+                    <div class="window" style="width:25px;height:25px;left:10px;top:20px"></div>
+                    <div class="window" style="width:25px;height:25px;left:60px;top:-8px"></div>
+                    <div class="window" style="width:25px;height:25px;left:110px;top:-37px"></div>
+                </div>
+            </div>
+        </div>
+        <div class="ground">
+            <img class="bushes" src="bushes.png">
+        </div>
+        <div class="buttons">
+            <input type="radio" name="atmosphere" id="normal" checked><b>Normal</b><br>
+            <input type="radio" name="atmosphere" id="rainy"><b>Rainy</b><br>
+            <input type="radio" name="atmosphere" id="windy"><b>Windy</b><br>
+            <input type="radio" name="atmosphere" id="summer"><b>Summer</b><br>
+            <input type="radio" name="atmosphere" id="winter"><b>Winter</b><br>
+            <input type="radio" name="atmosphere" id="spring"><b>Spring</b><br>
+        </div>
+    </section>
+</body>
+</html>
